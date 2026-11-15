@@ -16,7 +16,7 @@ nexus-common = { path = "../common" }
 nexus-core = { path = "../core" }
 nexus-sdk-macros = { path = "./macros" }
 
-nexus-core-legacy = { package = "nexus-core", git = "https://github.com/nexus-xyz/nexus-zkvm", branch = "releases/0.2.4", features = ["prover_nova", "prover_hypernova", "prover_jolt"], optional = true }
+nexus-core-legacy = { package = "nexus-core", git = "https://github.com/collinjackson/nexus-zkvm", branch = "fix-jolt-source", features = ["prover_nova", "prover_hypernova", "prover_jolt"], optional = true }
 ark-serialize = { version = "0.5.0", optional = true }
 
 postcard = { version = "1.0.10", features = ["alloc", "use-std"], default-features = false }
