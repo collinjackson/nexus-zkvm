@@ -139,7 +139,7 @@ jobs:
         run: cargo test -p ${{ matrix.crate }} --target wasm32-wasip1 --profile ci-test
 
   tests-sdk:
-    runs-on: ubuntu-latest-m
+    runs-on: ubuntu-latest
     strategy:
       matrix:
         crate: [nexus-sdk]
@@ -204,7 +204,7 @@ jobs:
           retention-days: 90
 
   run-sdk-examples:
-    runs-on: ubuntu-latest-m
+    runs-on: ubuntu-latest
     needs: tests-sdk
     strategy:
       matrix:
